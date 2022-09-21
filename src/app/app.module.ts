@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {InputTextModule} from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
+import { TabViewModule } from 'primeng/tabview';
+import { TooltipModule } from 'primeng/tooltip';
 
 import { AppComponent } from './app.component';
 
@@ -13,9 +15,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    InputTextModule,
+
     ButtonModule,
-    TableModule
+    InputTextModule,
+    TableModule,
+    TabViewModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
